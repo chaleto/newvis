@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Reset your password{% endblock %}
+
+{% block body %}
+
+    <div class="reset">
+    {{ form_start(resetForm) }}
+        {{ form_row(resetForm.plainPassword) }}
+        <button class="btn-reset">Reset password</button>
+    {{ form_end(resetForm) }}
+    </div>
+
+    <style>
+
+    .reset{
+    margin-top: 100px;
+    margin-left: 1200px;
+    }
+    .btn-reset{
+    width: 300px;
+    height: 25px;
+    }
+
+
+     @media (max-width: 576px){
+    .reset{
+    margin-top: 350px;
+    margin-left: 10px;
+    }
+    .btn-reset{
+    width: 300px;
+    height: 25px;
+    }
+
+    }
+    </style>
+{% endblock %}

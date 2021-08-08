@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ absolute_url(asset('/css/support.css')) }}" />
+
+       {% endblock %}
+
+<div class="reclame">
+
+<p>We know that starting a new business is not very easy. Especially in the era of technologies where everything goes digital it is almost impossible to show ideas or products without publishing it in the virtual world  !</p>
+
+<p>So now you will ask how to do it ? </p>
+
+<p><b>The solution is very easy !</b></p>
+<span class="rec"><p>Our team from  <span class="nv"><a href="{{path('about')}}">New Vision</a></span> gives to you the best performance about your business and ideas, but so let's do not talk anymore and just check out our <a href="{{path('offers_index')}}" class="offa"><span class="offer">offers !</span></a></p></span>
+
+</div>
+
+
+
+{% endblock %}

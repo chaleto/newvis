@@ -1,13 +1,83 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+        <title>{% block title %}New Vision{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
-
-        {% block javascripts %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<link rel="stylesheet" href="{{asset('/css/base.css')}}" />
+
+<div class="btn">
+     <span class="fas fa-bars"></span>
+   </div>
+<nav class="sidebar">
+     <div class="text"> Menu</div>
+<ul>
+<li class="active"><a href="{{path('main')}}">Home</a></li>
+<li>
+  {% if not app.user %}
+         <a href="#" class="feat-btn">User
+           <span class="fas fa-caret-down first"></span>
+         </a>
+         <ul class="feat-show">
+<li><a href="{{path('app_login')}}">Login</a></li>
+<li><a href="{{path('app_register')}}">Registration</a></li>
+</ul>
+{% else %}
+<a href="#" class="feat-btn">User
+  <span class="fas fa-caret-down first"></span>
+</a>
+<ul class="feat-show">
+<li><a href="{{path('user')}}">Profile</a></li>
+<li><a href="{{path('app_logout')}}">Log Out</a></li>
+</ul>
+
+{% endif %}
+</li>
+<li>
+         <a href="#" class="serv-btn">Services
+           <span class="fas fa-caret-down second"></span>
+         </a>
+         <ul class="serv-show">
+<li><a href="{{path('support')}}">Web Development</a></li>
+</ul>
+</li>
+<li><a href="{{path('about')}}">About</a></li>
+</ul>
+</nav>
+
+<script>
+   $('.btn').click(function(){
+     $(this).toggleClass("click");
+     $('.sidebar').toggleClass("show");
+
+   });
+     $('.feat-btn').click(function(){
+       $('nav ul .feat-show').toggleClass("show");
+       $('nav ul .first').toggleClass("rotate");
+     });
+     $('.serv-btn').click(function(){
+       $('nav ul .serv-show').toggleClass("show1");
+       $('nav ul .second').toggleClass("rotate");
+     });
+     $('nav ul li').click(function(){
+       $(this).addClass("active").siblings().removeClass("active");
+     });
+   </script>
+
+  <h1 class="moto">TOGETHER WE DESIGN THE FUTURE</h1>
+
+
+
+        {% block body %}
+        {% endblock %}
+
+
     </body>
 </html>

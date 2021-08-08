@@ -1,0 +1,57 @@
+.purple{
+  color: purple;
+  margin-top: 20px;
+  margin-left: 1300px;
+}
+.about{
+
+color: black;
+font-size: 22px;
+font-family: Sans-serif;
+margin-top: 100px;
+margin-left: 1200px;
+max-width: 600px;
+}
+img{
+
+height: 400px;
+width: 400px;
+border: 2px solid purple;
+border-radius: 20px;
+
+}
+.cont{
+  margin-left: 1200px;
+}
+
+@media (max-width: 576px){
+  .purple{
+    margin-left: 10px;
+  }
+img{
+  height: 200px;
+  width: 200px;
+  border: 2px  solid purple;
+  border-radius: 100%;
+}
+.milev{
+border-radius: 50%;
+height: 150px;
+width: 200px;
+margin-left: 80px;
+}
+
+.about{
+color: white;
+font-size: 15px;
+max-width: 300px;
+margin-left: 10px;
+margin-top: 250px;
+line-height: 20px;
+}
+.cont{
+  margin-left:50px;
+  margin-top: 20px;
+  color: white;
+}
+}

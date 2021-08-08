@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block body %}
+
+<div class="userdash">
+<p><b>{{app.user.email}}</b></p>
+
+
+<a href="{{path('app_logout')}}" class="logout">Exit</a>
+
+
+{{form_start(form)}}
+<div class="user">
+{{form_row(form.userid, {'value':app.user.id})}}
+</div>
+<div class="check">
+{{form_row(form.check, {'label': 'Check Orders'})}}
+</div>
+{{form_end(form)}}
+</div>
+<style>
+
+.user{
+visibility: hidden;
+}
+.userdash{
+color: black;
+margin-left: 1000px;
+}
+.check button{
+color: white;
+background-color: purple;
+border: 1px solid white;
+border-radius: 20px;
+height: 25px;
+width: 250px;
+font-size: 20px;
+margin-left: 100px;
+}
+.logout{
+color: black;
+text-decoration: none;
+margin-left: 100px;
+}
+.profile{
+color: white;
+text-decoration: none;
+margin-left: 900px;
+}
+
+@media (max-width: 576px){
+
+.check button{
+color: white;
+background-color: purple;
+border: 1px solid white;
+border-radius: 20px;
+height: 25px;
+width: 250px;
+font-size: 20px;
+margin-left: 10px;
+margin-top: 10px;
+}
+.userdash{
+color: black;
+margin-left: 100px;
+margin-top: 350px;
+}
+.logout{
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+}
+</style>
+
+{% endblock %}

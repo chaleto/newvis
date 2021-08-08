@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<table class="table">
+<th>offer</th>
+<th>price</th>
+<th>date</th>
+
+{% for res in result %}
+<tr>
+<td>{{res.packid}}</td>
+<td>${{res.price}}</td>
+<td>{{res.createdat|date("d/m/Y")}}</td>
+{% endfor %}
+</tr>
+
+
+</table>
+
+<style>
+.table{
+border: 1px solid black;
+margin-left: 1200px;
+margin-top: 100px;
+}
+.table td{
+color:white;
+font-size: 18px;
+border: 1px solid white;
+}
+
+@media (max-width: 576px){
+.table{
+margin-top: 350px;
+margin-left: 10px;
+}
+}
+</style>
+{% endblock %}

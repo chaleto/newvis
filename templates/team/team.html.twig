@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<link rel="stylesheet" href="{{asset('/css/team.css')}}" />
+
+{%for user in users %}
+<div class="cont">
+                <img src="{{asset('/images/' ~ user.image)}}"/><br>
+<b>{{user.name}}</b>
+<br>
+<b>{{user.title}}</b>
+<br>
+{{user.biography}}
+</div>
+{%endfor %}
+
+{% endblock %}

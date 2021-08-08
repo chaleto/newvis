@@ -1,0 +1,208 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+img {
+
+  vertical-align: middle;
+  border: 2px solid white;
+  width: 500px;
+}
+
+.white{
+  color: white;
+}
+
+.reclame{
+
+color: white;
+font-family: "Audiowide", sans-serif;
+font-weight: bold;
+font-size: 22px;
+max-width: 500px;
+margin-top: 120px;
+margin-left: 700px;
+font-family: sans-serif;
+
+}
+.reclame2{
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  max-width: 500px;
+  margin-left: 1200px;
+  margin-top: -430px;
+  font-family: sans-serif;
+
+}
+.nv{
+  color: #333869;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.rec{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 23px;
+}
+
+.offer{
+  color: darkblue;
+  cursor: pointer;
+}
+
+@media  (max-width: 1300px) {
+
+  img {
+    vertical-align: middle;
+    border: 2px solid white;
+    width: 400px;
+  }
+  .reclame{
+    font-size:18px;
+
+  }
+ .reclame2{
+  font-size: 18px;
+  margin-left: 750px;
+ }
+
+
+ .panel {
+   border: 1px solid #f4511e;
+   border-radius:0;
+   transition: box-shadow 0.5s;
+   margin-top: 100px;
+ }
+
+ .panel:hover {
+   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+ }
+
+ .panel-footer .btn:hover {
+   border: 1px solid black;
+   background-color: silver !important;
+   color: black;
+ }
+
+ .panel-heading {
+   color: white !important;
+   background-color: gray !important;
+   padding: 25px;
+   border-bottom: 1px solid transparent;
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+ }
+
+ .panel-footer {
+   background-color: #fff !important;
+ }
+
+ .panel-footer h3 {
+   font-size: 32px;
+ }
+
+ .panel-footer h4 {
+   color: #aaa;
+   font-size: 14px;
+ }
+
+ .panel-footer .btn {
+   margin: 15px 0;
+   background-color: #165ea6;
+   color: #fff;
+ }
+
+
+
+
+}
+
+ @media  (max-width: 576px) {
+   body{
+     background-size: 500px 1000px;
+   }
+   img {
+
+     vertical-align: middle;
+     border: 2px solid white;
+     width: 300px;
+     margin-top: 10px;
+     margin-left: 50px;
+   }
+   .reclame{
+     font-size:10px;
+   }
+  .reclame2{
+   font-size: 10px;
+   margin-left: 50px;
+   margin-top: 160px;
+   position: relative;
+  }
+  .nv{
+    font-size: 10px;
+  }
+  .rec{
+    font-size: 10px;
+  }
+
+  .container-fluid{
+    margin-top: 120px;
+  }
+  .panel {
+    border: 1px solid #f4511e;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+    margin-top: 100px;
+  }
+
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+
+  .panel-footer .btn:hover {
+    border: 1px solid black;
+    background-color: silver !important;
+    color: black;
+  }
+
+  .panel-heading {
+    color: white !important;
+    background-color: gray !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .panel-footer {
+    background-color: #fff !important;
+  }
+
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #165ea6;
+    color: #fff;
+  }
+
+
+
+
+
+}
