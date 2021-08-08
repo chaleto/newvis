@@ -1,0 +1,59 @@
+.reg-form{
+  margin-left: 1200px;
+  margin-top: 100px;
+  line-height: 50px;
+}
+.reg-form input{
+  border-radius: 10px;
+  height: 30px;
+}
+.reg-form ::placeholder{
+  color: black;
+  text-align: center;
+}
+#registration_form_agreeTerms{
+  margin-top: 10px;
+  margin-left: 150px;
+  width: 20px;
+}
+.reg-form label{
+  position: fixed;
+  color: black;
+  visibility: hidden;
+}
+.btn-register{
+  height: 30px;
+  width: 200px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+.btn-register:hover{
+cursor: pointer;
+color: white;
+background-color: green;
+}
+
+@media (max-width: 576px) {
+  .reg-form{
+    margin-left: 50px;
+    margin-top: 300px;
+  }
+  .reg-form label{
+visibility: hidden;
+  }
+  .btn-register{
+    margin-left: 0px;
+    width: 180px;
+  }
+.reg:checkbox{
+  margin-left: 20px;
+}
+.reg label{
+visibility: hidden;
+}
+#registration_form_agreeTerms{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 30px;
+}
+ }

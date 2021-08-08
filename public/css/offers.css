@@ -1,0 +1,56 @@
+.table{
+  margin-left: 1400px;
+}
+.show{
+  color: skyblue;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 50px;
+
+
+}
+.show:hover{
+  font-size: 45px;
+  color: skyblue;
+border-bottom: 2px dashed white;
+
+}
+.offer{
+  margin-left: 500px;
+  margin-top: 100px;
+  position: fixed;
+  font-size: 20px;
+  color: skyblue;
+  font-weight: bold;
+}
+@media (max-width: 576px) {
+  .offers-move{
+    margin-top: 250px;
+  }
+  .table{
+    margin-left: 100px;
+    margin-top: 200px;
+  }
+  .show{
+    color: skyblue;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 200px;
+
+  }
+  .show:hover{
+    font-size: 35px;
+  border-bottom: 2px dashed white;
+
+  }
+  .offer{
+    margin-left: 500px;
+    margin-top: 100px;
+    position: fixed;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+  }
+
+}

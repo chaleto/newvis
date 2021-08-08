@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{{asset('/css/buy.css')}}"/>
+
+
+
+<table class="table">
+    <tbody>
+
+        <tr>
+        <th><p class="name">{{ offer.name }}</p></th>
+
+        <tr>
+            <td><p class="desc">{{ offer.descriptions }}</p></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><p class="price">${{ offer.price }}</p></td>
+        </tr>
+
+    </tbody>
+</table>
+
+{{ form_start(form)}}
+{{ form_row(form.usermail, {'value' : app.user.email}) }}
+{{ form_row(form.userid, {'value' : app.user.id}) }}
+{{ form_row(form.packid, {'value' : offer.id}) }}
+{{ form_row(form.offername, {'value' : offer.name}) }}
+{{ form_row(form.createdAt) }}
+{{ form_row(form.price, {'value' : offer.price}) }}
+{{form_row(form.Buy)}}
+{{form_end(form)}}
+
+{% endblock %}

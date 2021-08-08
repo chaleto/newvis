@@ -1,0 +1,43 @@
+.intro{
+
+color: black;
+font-size: 22px;
+margin-left: 1300px;
+margin-top: 50px;
+font-family: "Audiowide", sans-serif;
+font-weight: bold;
+max-width: 500px;
+}
+
+.simage{
+  width: 90%;
+  margin-top: 770px;
+  margin-left: 190px;
+}
+.offers{
+  font-size: 24px;
+}
+
+@media (max-width: 576px){
+
+.intro{
+
+color: white;
+font-size: 14px;
+margin-left: 10px;
+margin-top: 250px;
+max-width: 500px;
+text-align: center;
+font-weight: bold;
+text-align: left;
+
+}
+
+.simage{
+  width: 84%;
+  height: 100%;
+  margin-top: 600px;
+  margin-left: 10px;
+}
+
+}

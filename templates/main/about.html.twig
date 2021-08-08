@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<link rel="stylesheet" href="{{asset('/css/about.css')}}" />
+<div class="about">
+
+<p>WHO ARE WE ?</p>
+<br>
+<p><b>We are a young inspired team which mission is to bring the best solutions about you and your projects and ideas!</b></p>
+<br>
+<p><i>We are looking  the future by one new different from the casual way!</i></p>
+<br>
+<p><b>Or how we say </b><b style="color:purple">"TOGETHER WE DESIGN THE FUTURE."</b></p>
+
+</div>
+<div class="team">
+
+<h1 class="purple"> New Vision Team </h1>
+
+{% for user in users %}
+<div class="cont">
+<img src="{{asset('/images/' ~ user.image)}}"/>
+<br>
+<b>{{user.name}}</b>
+<p>{{user.title}}</p>
+<a href="{{path('biography',{id: user.id})}}">Check Autobiography</a>
+</div>
+
+{%endfor%}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+.form{
+  display: grid;
+  margin-left: 1200px;
+}
+.form-control{
+  text-align: center;
+  width: 300px;
+}
+.form label{
+  color: white;
+}
+.btn-login{
+  width: 300px;
+  margin-top: 20px;
+}
+.btn-login:hover{
+  cursor: pointer;
+  color: white;
+  background-color: green;
+}
+@media (max-width: 576px) {
+  .form{
+    margin-left: 50px;
+    margin-top: 400px;
+  }
+
+.form-control{
+  height: 30px;
+  border-radius: 10px;
+  width: 250px;
+  margin-top: 10px;
+
+
+}
+
+
+  .btn-login{
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+  }
+  .btn-login:hover{
+    cursor: pointer;
+    color: white;
+    background-color: green;
+  }
+  .forgpass {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  }
